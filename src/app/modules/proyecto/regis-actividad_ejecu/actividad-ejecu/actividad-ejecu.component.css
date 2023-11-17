@@ -1,0 +1,507 @@
+.borde {
+    margin-top: 2px;
+    margin-left: 15px;
+    width: 1200px;
+    height: 600px;
+    border-radius: 23px;
+    border: 6px solid #F7A800;
+    background: rgba(255, 255, 255, 0.90);
+}
+
+.regresar {
+    display: flex;
+}
+
+.boton_regresar {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.proyecto {
+    margin-left: 400px;
+    margin-top: 15px;
+    color: #014277;
+    font-family: Squada One;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+.proyecto1 {
+    margin-left: 150px;
+    color: #014277;
+    font-family: Squada One;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.crear_buscar {
+    display: flex;
+}
+
+.boton_crear {
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-top: 14px;
+    width: 100px;
+    height: 32px;
+    border-radius: 10px;
+    background: #F7A800;
+    border-color: #F7A800;
+    
+}
+.boton_crear1 {
+    
+    margin-left: 115px;
+    margin-top: 10px;
+    padding-top: 3px;
+    width: 100px;
+    height: 20px;
+    border-radius: 15px;
+    background: #F7A800;
+    border: 2px solid#073564;
+    
+}
+
+.crear {
+    
+    color: #014277;
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+}
+.crear1 {
+    
+    color: #014277;
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cuadro_radius{
+border-radius: 3px;
+}
+
+.registrar_intervencion {
+    margin-left: 360px;
+    margin-top: 10px;
+    color: #014277;
+    font-family: Squada One;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.espacio{
+    
+    margin-bottom: 10px;
+}
+.espacio1{
+    
+    margin-bottom: 3px;
+}
+.datos {
+    margin-left: 15px;
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.datos1 {
+    margin-left: 12px;
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.datos2 {
+    margin-left: 65px;
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.datos_intervencion {
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 505px;
+    width: 1140px;
+}
+
+.estructura {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor_ubigeo {
+    margin-top: 20px;
+    width: 630px;
+    height: 90px;
+    border-radius: 10px;
+    border: 2px solid #014277;
+    background: #D6D6D6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ubigeo {
+    margin-top: 5px;
+    margin-left: 260px;
+    color: #024379;
+    font-family: Concert One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ubicacion {
+    margin-top: 8px;
+    margin-left: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+.form-control {
+    width: 295px;
+    height: 50px;
+    margin-left: 15px;
+    border-radius: 8px;
+    border: 2px solid #014277;
+    background: #FFF;
+}
+.form-control1 {
+    margin-top: 3px;
+    width: 165px;
+    height: 160px;
+    border-radius: 8px;
+    border: 2px solid #014277;
+    background: #FFF;
+    margin-left: 17px;
+}
+.texto_ubigeo {
+    margin-top: 5px;
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.contenedor_filtros {
+    width: 620px;
+    height: 400px;
+    margin-left: 10px;
+    display: flex;
+
+}
+
+.buscar {
+    padding-top: 12px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 1030px;
+    height: 34px;
+    border-radius: 10px;
+    background: rgba(163, 163, 163, 0.37);
+
+}
+
+.filtros {
+    margin-left: 10px;
+}
+
+.tabla {
+    width: 710px;
+    margin: 15px auto 0;
+   /* Establece los márgenes izquierdo y derecho en "auto" para centrar horizontalmente */
+   border: 4px solid transparent;
+   background-color: #014277;
+   border-collapse: collapse;
+   border-radius: 8px;
+   margin-top: -8px;
+}
+
+th,
+td {
+   padding: 8px;
+   border: 2px solid rgba(255, 255, 255, 0.50);
+   border-collapse: collapse;
+   color: white;
+   font-family: Comic Neue;
+   font-size: 15px;
+   font-style: normal;
+   font-weight: 650;
+   line-height: normal;
+   text-align: center;
+}
+
+
+.select {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+}
+
+.seleccionar {
+    cursor: pointer;
+    height: 20px;
+}
+
+.fecha_tipo {
+    width: 630px;
+    height: 123px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contener_fechas {
+    margin-left: 15px;
+    margin-top: 10px;
+    height: 50px;
+    width: 135px;
+}
+
+.fecha {
+    margin-top: 3px;
+    width: 135px;
+    height: 24px;
+    border-radius: 7px;
+    border: 2px solid #014277;
+    text-align: center;
+}
+
+.tipo {
+    margin-left: 20px;
+    height: 40px;
+    width: 150px;
+}
+.tipo_int {
+    margin-top: 3px;
+    width: 529.2px;
+    height: 28px;
+    border-radius: 5px;
+    border: 2px solid #014277;
+    background: #FFF;
+}
+
+.tipo_doc {
+    margin-top: 3px;
+    width: 230px;
+    height: 28px;
+    border-radius: 5px;
+    border: 2px solid #014277;
+}
+
+.contener_doc {
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-top: 5px;
+    width: 295px;
+    height: 22px;
+    border-radius: 20px;
+    border: 2px solid #6F6F6F;
+    background: #6F6F6F;
+    font-family: Squada One;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+}
+.contener_doc1 {
+    margin-top: 0px;
+    width: 330px;
+    height: 500px;
+    border-radius: 15px;
+    border: 2px solid #014277;
+    background: rgba(197, 194, 194, 0.77);
+}
+
+.datos_1 {
+    width: 370px;
+    height: 500px;
+}
+
+.linea_separa {
+    width: 2px;
+    height: 502px;
+    background-color: #F7A800;
+}
+
+.descripcion_guardar {
+    margin-top: -11px;
+    margin-left: 38px;
+    width: 700px;
+    
+}
+
+.descripcion {
+    margin-top: 3px;
+    width: 400px;
+    height: 380px;
+    border-radius: 5px;
+    border: 2px solid #014277;
+    background: #FFF;
+}
+
+.guardar {
+    margin-top: 2px;
+    padding-top: 5px;
+    margin-left: 260px;
+    width: 140px;
+    height: 30px;
+    border-radius: 20px;
+    background: #F7A800;
+    margin-top: 10px;
+}
+
+.texto_guardar {
+    margin-top: 5px;
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.id {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    color: white;
+}
+
+.nombre_documento {
+    width: 170px;
+    color: white;}
+
+.tipo_afiliacion {
+    width: 100px;
+    text-align: center;
+    color: white;}
+
+.fecha_inicio {
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 168px;
+    text-align: center;
+    margin-left: 25px;
+    color: white;
+}
+.fecha_inicio1 {
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 168px;
+    text-align: center;
+    margin-left: 25px;
+    
+}
+
+.fecha_fin {
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 120px;
+    text-align: center;
+    margin-left: 33px;
+}
+
+.estado {
+    width: 150px;
+    text-align: center;
+    color: white;}
+
+.acción {
+    width: 190px;
+    text-align: center;
+    color: white;}
+
+.borrar {
+    margin-right: 10px;
+}
+
+.editar {
+    margin-right: 10px;
+}
+
+.texto_buscar {
+    margin-left: 20px;
+    margin-right: 10px;
+    color: #000;
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    
+    
+}
+
+.estilo_caja {
+    
+    border-radius: 7px; 
+    border-width: 1.7px;
+    font-family: 'Comic Neue';
+    font-size: 14px;
+    font-style: normal;
+    outline: none;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    border-color:#014277;
+    border-style:solid;
+}
+
+.caja_buscar{
+    border-radius: 7px; 
+    border-width: 2px;
+    font-family: 'Comic Neue';
+    font-size: 14px;
+    font-style: normal;
+    outline: none;
+    width: 298px;
+    height: 28px;
+    text-align: center;
+    border-color:#014277;
+    border-style:solid;
+    margin-left: 15px;
+    margin-top: 3px;
+
+}
+
+.descargar{
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.proyect_tipo {
+    margin-left: 175px;
+    margin-top: -50px;
+    margin-right: 15px;
+}

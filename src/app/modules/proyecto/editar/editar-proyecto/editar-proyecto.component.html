@@ -1,0 +1,141 @@
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Squada+One&display=swap"
+    rel="stylesheet">
+
+<div class="borde">
+    <div class="regresar">
+        <a href="/home/proyecto"><img src="/assets/pictures/regresar.png" class="boton_regresar"></a>
+        <p class="proyecto1">Editar Perfil de Proyecto</p>
+    </div>
+    <div class="datos_intervencion">
+        <form (ngSubmit)="onSubmit()">
+            <div class="estructura">
+                <div class="datos_1">
+
+                    <div class="espacio">
+                        <label class="datos">Nombre del Proyecto:</label>
+                        <input type="text" id="nombre_proyecto" [(ngModel)]="proyecto.nombre_proyecto"
+                            name="nombre_proyecto" class="form-control" />
+                    </div>
+                    <div class="espacio">
+                        <label class="datos">Nombre del Coordinador:</label>
+                        <select class="form-control" id="coordinador" [(ngModel)]="proyecto.coordinador"
+                            name="coordinador">
+                            <option *ngFor="let coordinado of coordinador" [ngValue]="coordinado">
+                                {{coordinado.persona?.nombre}}</option>
+                        </select>
+                    </div>
+                    <div class="espacio">
+                        <div class="contener_fechas">
+                            <label class="datos">Tipo de Proyecto:</label>
+                            <select class="tipo_doc" id="tip_proyec" [(ngModel)]="proyecto.tip_proyec"
+                                name="tip_proyec">
+                                <option *ngFor="let tip_proyec of tipproyec" [ngValue]="tip_proyec">
+                                    {{tip_proyec.nombre_tipro}}</option>
+                            </select>
+                        </div>
+                        <div class="proyect_tipo">
+                            <div>
+                                <label class="datos">Modalidad:</label>
+                                <select class="tipo_doc" id="modalidad" [(ngModel)]="proyecto.modalidad"
+                                    name="modalidad">
+                                    <option *ngFor="let modal of modalidad" [ngValue]="modal">{{modal.nombre_moda}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="espacio">
+                        <label class="datos">Nombre de Documento de Intervencion:</label>
+                        <select class="tipo_int" id="documento" [(ngModel)]="proyecto.documento" name="documento">>
+                            <option *ngFor="let doc of documento" [ngValue]="doc">{{doc.nombre}}</option>
+                        </select>
+                    </div>
+                    <div class="espacio">
+                        <label class="datos">Beneficiarios:</label>
+                        <input type="text" id="beneficiarios" [(ngModel)]="proyecto.beneficiarios" name="beneficiarios"
+                            class="form-control" />
+                    </div>
+                    <div class="espacio">
+                        <label class="datos">Objetivos:</label>
+                        <input type="text" id="objetivos" [(ngModel)]="proyecto.objetivos" name="objetivos"
+                            class="form-control" />
+                    </div>
+
+                    <label class="datos">Descripción:</label>
+                    <input type="text" id="descripcion" [(ngModel)]="proyecto.descripcion" name="descripcion"
+                        class="form-control2" />
+
+
+                </div>
+                <div class="linea_separa"></div>
+                <div class="descripcion_guardar">
+                    <div class="fecha_tipo">
+                        <div class="contener_fechas">
+                            <div class="espacio">
+                                <label class="fecha_inicio">Fecha inicio:</label>
+                                <input type="date" class="fecha" id="fecha_inicio" [(ngModel)]="proyecto.fecha_ini"
+                                    name="fecha_inicio" />
+                            </div>
+                            <div class="espacio">
+                                <label class="fecha_fin">Fecha fin:</label>
+                                <input type="date" class="fecha" id="fecha_fin" [(ngModel)]="proyecto.fecha_fin"
+                                    name="fecha_fin" />
+                            </div>
+                        </div>
+                        <div class="contener_doc">
+                        </div>
+                    </div>
+                    <div class="espacio">
+                        <div class="contener_fechas">
+                            <label class="datos">N° de Acuerdo:</label>
+                            <input type="text" id="nacuerdo" [(ngModel)]="proyecto.nacuerdo" name="nacuerdo"
+                                class="form-control1" />
+                        </div>
+                        <div class="proyect_tipo">
+                            <label class="datos">Presupuesto:</label>
+                            <input type="text" id="presupuesto" [(ngModel)]="proyecto.presupuesto" name="presupuesto"
+                                class="form-control1" />
+                        </div>
+                    </div>
+                    <div class="espacio">
+                        <label class="datos">Escuela Profesional:</label>
+                        <select class="tipo_int" id="escu_prof" [(ngModel)]="proyecto.escu_prof" name="escu_prof">
+                            <option *ngFor="let esc of escuprof" [ngValue]="esc">{{esc.carrera}}</option>
+                        </select>
+                    </div>
+                    <div class="espacio">
+                        <div class="contener_fechas">
+                            <label class="datos">Semestre:</label>
+                            <select class="tipo_doc" id="parametros" [(ngModel)]="proyecto.parametros"
+                                name="parametros">
+                                <option *ngFor="let par of parametros" [ngValue]="par">{{par.valor}}</option>
+                            </select>
+                        </div>
+                        <div class="proyect_tipo">
+                            <div>
+                                <label class="datos">Ciclo:</label>
+                                <select class="tipo_doc" id="ciclo" [(ngModel)]="proyecto.ciclo" name="ciclo">
+                                    <option *ngFor="let cic of ciclo" [ngValue]="cic">{{cic.nombre_ciclo}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contener_doc1">
+                        <label class="datos">Estado:</label>
+                        <input type="text" id="estado" [(ngModel)]="proyecto.estado" name="estado"
+                            class="form-control1" />
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="boton_crear1">
+                <a class="crear1">
+                    <p>GUARDAR</p>
+                </a>
+            </button>
+        </form>
+    </div>
+</div>

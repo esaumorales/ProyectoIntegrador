@@ -1,0 +1,68 @@
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Squada+One&display=swap"
+    rel="stylesheet">
+
+<div class="borde">
+    <div class="regresar">
+        <a href="/menu"><img src="/assets/pictures/regresar.png" class="boton_regresar"></a>
+        <p class="proyecto">Lista de Proyectos</p>
+    </div>
+    <div class="crear_buscar">
+        <div class="boton_crear">
+            <a [routerLink]="['/home/proyecto/registrar']" class="crear">
+                <p>REGISTRAR</p>
+            </a>
+        </div>
+        <div class="buscar">
+            <label class="texto_buscar">Tipo de proyecto:</label>
+            <select class="caja_buscar" id="tip_proyec" name="tip_proyec">
+                <option *ngFor="let tip_proyec of tipproyec">{{tip_proyec.nombre_tipro}}</option>
+            </select>
+            <label class="texto_buscar">Modalidad:</label>
+            <select class="caja_buscar" id="modalidad" name="modalidad">
+                <option *ngFor="let modal of modalidad">{{modal.nombre_moda}}</option>
+            </select>
+            <label class="texto_buscar">Semestre:</label>
+            <select class="caja_buscar" id="parametros" name="parametros">
+                <option *ngFor="let par of parametros">{{par.valor}}</option>
+            </select>
+            <label class="texto_buscar">N°Acuerdo:</label>
+            <input class="estilo_caja">
+        </div>
+    </div>
+    <div class="container_tabla">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th class="id">N°</th>
+                    <th class="nombre_afiliacion">Nombre de Proyecto</th>
+                    <th class="tipo_afiliacion">Tipo de Proyecto</th>
+                    <th class="fecha_inicio">N°Acuerdo</th>
+                    <th class="estado">Estado</th>
+                    <th colspan="3" class="acción">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let proyecto of proyectos">
+                    <td>{{proyecto.id}}</td>
+                    <td>{{proyecto.nombre_proyecto}}</td>
+                    <td>{{proyecto.tip_proyec?.nombre_tipro}}</td>
+                    <td>{{proyecto.nacuerdo}}</td>
+                    <td class="estado">{{proyecto.estado}}</td>
+                    <td class="acción">
+                        <a [routerLink]="['/home/proyecto/registrar_actividadP', proyecto.id]"><img
+                                src="/assets/pictures/examen1.png" class="descargar"></a>
+                        <a [routerLink]="['/home/proyecto/registrar_actividadE']"><img
+                                src="/assets/pictures/ejecucion1.png" class="descargar"></a>
+                        <a [routerLink]="['/home/proyecto/registrar_roles']"><img src="/assets/pictures/tuerca.png"
+                                class="descargar"></a>
+                        <a [routerLink]="['/home/proyecto/editar', proyecto.id]"><img src="/assets/pictures/editar1.png"
+                                class="descargar"></a>
+                        <a><img src="/assets/pictures/comentar.png" class="descargar"></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

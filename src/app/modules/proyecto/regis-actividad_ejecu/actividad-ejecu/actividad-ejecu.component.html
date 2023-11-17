@@ -1,0 +1,89 @@
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Squada+One&display=swap"
+    rel="stylesheet">
+
+<div class="borde">
+    <div class="regresar">
+        <a href="/home/proyecto"><img src="/assets/pictures/regresar.png" class="boton_regresar"></a>
+    </div>
+    <div class="datos_intervencion">
+        <div class="estructura">
+            <div class="datos_1">
+                <div class="contener_doc1">
+                    <div class="espacio">
+                        <div class="contener_doc">
+                            <p>AGREGAR ACTIVIDAD</p>
+                        </div>
+                    </div>
+                    <div class="espacio">
+                        <label class="datos">Nombre de la Actividad:</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                    <div class="espacio">
+                        <div class="contener_fechas">
+                            <label class="fecha_inicio1">Fecha inicio:</label>
+                            <input type="date" class="fecha">
+                        </div>
+                        <div class="proyect_tipo">
+                            <label class="fecha_fin">Fecha fin:</label>
+                            <input type="date" class="fecha">
+                        </div>
+                    </div>
+                    <div class="espacio">
+                        <label class="texto_buscar">Tipo de proyecto:</label>
+                        <select class="caja_buscar">
+                            <option>-------</option>
+                            <option>Proyecto</option>
+                            <option>Programa</option>
+                            <option>Voluntariado</option>
+
+                        </select>
+                    </div>
+                    <div class="espacio">
+                        <div>
+                        <label class="datos2">Descripción:</label>
+                    </div>
+                        <input type="text" class="form-control1" />
+                    </div>
+                    <div class="boton_crear1">
+                        <a href="/home/proyecto" class="crear1">
+                            <p>GUARDAR</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="linea_separa"></div>
+            <div class="descripcion_guardar">
+                <p class="proyecto1">Actividad de Ejecución</p>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th class="id">N°</th>
+                            <th class="nombre_documento">Actividad</th>
+                            <th class="fecha_inicio">Fecha Inicio</th>
+                            <th class="fecha_inicio">Fecha Fin</th>
+                            <th class="fecha_inicio">Tipo</th>
+                            <th colspan="3" class="acción">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let actividad_ejecu of actividadejecu">
+                            <td>{{actividad_ejecu.id}}</td>
+                            <td>{{actividad_ejecu.nombre_actividad}}</td>
+                            <td>{{actividad_ejecu.fecha_inicio}}</td>
+                            <td>{{actividad_ejecu.fecha_fin}}</td>
+                            <td>{{actividad_ejecu.parametros?.valor}}</td>
+                            <td class="acción">
+                                <a><img src="/assets/pictures/ver1.png" class="descargar"></a>
+                                <a><img src="/assets/pictures/editar1.png" class="descargar"></a>
+                                <a><img src="/assets/pictures/borrar.png" class="descargar"></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

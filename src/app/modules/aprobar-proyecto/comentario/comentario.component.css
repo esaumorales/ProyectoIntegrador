@@ -1,0 +1,124 @@
+.borde-contenedor{
+  border-radius: 4px;
+border: 4px solid #F7A800;
+background: #D8D8D3;
+}
+
+.encabezado {
+  position: relative;
+  text-align: center; 
+  display: flex;/* Para centrar el contenido horizontalmente */
+}
+
+h1 {
+  margin: 0 auto 0 300px;
+}
+
+.salir {
+  margin: 6px;
+}
+
+.cajas {
+  display: flex;
+
+}
+.caja1 {
+  margin-left: 2px;
+  margin-right: 4px;
+  width: 200px;
+  height: 300px;
+  background: #D8D8D3;
+  margin-bottom: 20px;
+}
+
+.caja2 {
+    width: 330px;
+    height: 300px;
+    background: #D8D8D3;
+    margin-bottom: 20px;
+}
+.caja3 {
+  width: auto;
+  margin: 0 10px;
+  height: 40px;
+  background: rgb(124, 99, 99);
+  margin-bottom: 4px;
+  
+}
+
+.cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eliminar {
+  position: absolute;
+  top: 0px;
+  right: 22px;
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+fill: #000;
+}
+
+.botones {
+  justify-content: center; 
+  display: block;
+  text-align: center;/* Centrar horizontalmente */
+}
+
+.boton1 {
+  background-color: #014277; /* Cambia el color de fondo a azul */
+  color: #F7A800; /* Cambia el color del texto a blanco */
+  padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+  margin-bottom: 3px;
+}
+
+.boton2 {
+  background-color: #F7A800; /* Cambia el color de fondo a azul */
+  color: #014277; /* Cambia el color del texto a blanco */
+  padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+  margin-bottom: 3px;
+}
+
+.boton3 {
+  background-color: #014277; /* Cambia el color de fondo a azul */
+  color: #F7A800; /* Cambia el color del texto a blanco */
+  padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+  margin-bottom: 3px;
+}
+
+
+ .descripcion {
+  background: white;
+  height: 280px;
+  border-radius: 23px;
+border: 6px solid #F7A800;
+background: #FFF;
+ }
+ .guardar {
+  display: block;
+  margin: 0 auto; 
+  text-align: center;
+  background-color: #F7A800; /* Cambia el color de fondo a azul */
+  color: #014277; /* Cambia el color del texto a blanco */
+  padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+  margin-bottom: 3px;
+ }

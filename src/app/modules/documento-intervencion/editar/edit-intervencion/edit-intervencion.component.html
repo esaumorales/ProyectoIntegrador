@@ -1,0 +1,90 @@
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Squada+One&display=swap"
+    rel="stylesheet">
+
+<div class="borde">
+    <div class="regresar">
+        <a href="/home/documento_intervencion"><img src="/assets/pictures/regresar.png" class="boton_regresar"></a>
+        <p class="registrar_intervencion">Registrar Intervención</p>
+    </div>
+    <div class="datos_intervencion">
+        <div class="estructura">
+            <div class="datos_1">
+                <div>
+                    <label class="datos">Nombre:</label>
+                    <input type="text" [(ngModel)]="documento.nombre" class="form-control" />
+                </div>
+                <div>
+                    <label class="datos">Institución:</label>
+                    <input type="text" [(ngModel)]="documento.institucion" class="form-control" />
+                </div>
+                <div>
+                    <label class="datos">Nombre de la autoridad:</label>
+                    <input type="text" [(ngModel)]="documento.nombre_autoridad" class="form-control" />
+                </div>
+                <div class="contenedor_ubigeo">
+                    <label class="ubigeo">UBIGEO</label>
+                    <img src="/assets/pictures/ubicacion.png" class="ubicacion">
+                    <div class="contenedor_filtros">
+                        <div class="filtros">
+                            <label class="texto_ubigeo"></label>
+                            <select [(ngModel)]="documento.ubigeo">
+                                <option *ngFor="let ubigeo of ubigeo" [ngValue]="ubigeo">{{ubigeo.departamento}}</option>
+                            </select>
+
+                            <label class="texto_ubigeo"
+                                *ngIf="documento.parametros">{{documento.parametros.valor}}</label>
+                            <select [(ngModel)]="documento.parametros">
+                                <option *ngFor="let parametro of parametros" [ngValue]="parametro">{{parametro.valor}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="fecha_tipo">
+                    <div class="contener_fechas">
+                        <div style="margin-top: 10px;">
+                            <label class="datos">Fecha inicio:</label>
+                            <input type="date" class="fecha" [(ngModel)]="documento.fecha_ini" id="fecha_fin">
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <label class="datos">Fecha fin:</label>
+                            <input type="date" class="fecha" [(ngModel)]="documento.fecha_fin" id="fecha_fin">
+                        </div>
+                    </div>
+                    <div class="tipo">
+                        <div style="margin-top: 20px;">
+                            <label class="datos">Distrito:</label>
+                            <select class="tipo_doc">
+                                <option>Selecciona el provincia</option>
+                                <option>Provincia1</option>
+                                <option>Provincia</option>
+                                <option>Provincia3</option>
+                            </select>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <label class="datos">Distrito:</label>
+                            <select class="tipo_doc">
+                                <option>Selecciona el provincia</option>
+                                <option>Provincia1</option>
+                                <option>Provincia</option>
+                                <option>Provincia3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="contener_doc">
+
+                    </div>
+                </div>
+            </div>
+            <div class="linea_separa"></div>
+            <div class="descripcion_guardar">
+                <label class="datos">Descripcion:</label>
+                <input type="text" class="descripcion" [(ngModel)]="documento.descripcion" />
+                <div class="guardar" (click)="Guardar()">
+                    <input type="submit" class="texto_guardar" value="Guardar">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

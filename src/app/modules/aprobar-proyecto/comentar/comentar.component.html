@@ -1,0 +1,41 @@
+<div class="contenedor">
+    <div class="borde">
+        <div class="encabezado">
+            <a href="/home/aprobar">
+            <img src="/assets/pictures/regresar.png" class="regresar"></a>
+            <h1 class="titulo">Aprobación del Proyecto</h1>
+
+        </div>
+        
+        <table class="tabla">
+            <thead>
+                <th class="id">N°</th>
+                <th class="nombre_afiliacion">Nombre de autoridad</th>
+                <th class="tipo_afiliacion">Fecha</th>
+                <th class="fecha_inicio">Comentario</th>
+                <th class="estado">Estado</th>
+            </thead>
+            <tbody>
+                <tr th:each="convenio:${aprobar}">
+                    <td class="id">01</td>
+                    <td class="nombre_afiliacion">Director de Mision</td>
+                    <td class="fecha">18/10/2023</td>
+                    <th class="comentario"><button mat-raised-button color="primary" (click)="openDialog()" class="coment">comentario</button></th>
+                    <td class="estado">En proceso </td>
+                </tr>
+            </tbody>
+            </table>
+            
+            <div class="atributos-container">
+             <div class="formulario">
+                <form>
+                    <label class="text1">N° Acuerdo:</label>
+                    <input class="form1">
+                    <label class="text2">Estado:</label>
+                    <input class="form2">
+                </form>
+
+            </div>
+            </div>
+    </div>
+</div>

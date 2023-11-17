@@ -1,0 +1,57 @@
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Squada+One&display=swap"
+    rel="stylesheet">
+
+<div class="borde">
+    <div class="regresar">
+        <a href="/menu"><img src="/assets/pictures/regresar.png" class="boton_regresar"></a>
+        <p class="proyecto">Registrar Asistencia</p>
+    </div>
+    <div class="crear_buscar">
+        <div class="buscar">
+            <label class="texto_buscar">Tipo de proyecto:</label>
+            <select class="caja_buscar1">
+                <option>-------</option>
+                <option>Proyecto</option>
+                <option>Programa</option>
+                <option>Voluntariado</option>
+            </select>
+            <label class="texto_buscar">Modalidad:</label>
+            <select class="caja_buscar2">
+                <option>-------</option>
+                <option>General</option>
+                <option>Escuela</option>
+            </select>
+            <label class="texto_buscar">Semestre:</label>
+            <select class="caja_buscar">
+                <option>-------</option>
+                <option>2023-1</option>
+                <option>2023-2</option>
+            </select>
+        </div>
+    </div>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th class="id">Codigo</th>
+          <th class="nombre_afiliacion">Nombre y Apellidos</th>
+          <th colspan="3" class="acción">Asistencia</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let alumno of alumnos">
+          <td class="center">{{ alumno.id }}</td>
+          <td class="center">{{ alumno?.persona?.nombre}} <i></i> {{ alumno?.persona?.apeliido_pat }} <i></i> {{ alumno?.persona?.apeliido_mat }}</td>
+          <td class="acción">
+            <select class="asistencia">
+              <option>Asistio</option>
+              <option>No asistio</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>

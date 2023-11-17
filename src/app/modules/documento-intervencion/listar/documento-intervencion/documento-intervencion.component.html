@@ -1,0 +1,73 @@
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Squada+One&display=swap"
+    rel="stylesheet">
+
+<div class="borde">
+    <div class="regresar">
+        <a href="/menu"><img src="/assets/pictures/regresar.png" class="boton_regresar"></a>
+        <p class="documento_intervencion">Lista de Documento de Intervención</p>
+    </div>
+    <div class="crear_buscar">
+        <div class="boton_crear">
+            <a [routerLink]="['/home/documento_intervencion/add']" class="crear">
+                <p>CREAR</p>
+            </a>
+        </div>
+        <div class="buscar">
+            <label class="texto_buscar">Tipo de proyecto:</label>
+            <select>
+                <option>UBIGEO</option>
+                <option>Departamento1</option>
+                <option>Departamento2</option>
+                <option>Departamento3</option>
+            </select>
+            <label class="texto_buscar">Estado:</label>
+            <select class="buscar_estado">
+                <option>ESTADO</option>
+                <option>Departamento1</option>
+                <option>Departamento2</option>
+                <option>Departamento3</option>
+            </select>
+            <label class="texto_buscar">Provincia:</label>
+            <select>
+                <option>UBIGEO</option>
+                <option>Departamento1</option>
+                <option>Departamento2</option>
+                <option>Departamento3</option>
+            </select>
+        </div>
+    </div>
+    <div class="container_tabla">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th class="id">N°</th>
+                    <th class="nombre_afiliacion">Nombre de Intervención</th>
+                    <th class="tipo_afiliacion">Tipo de documento</th>
+                    <th class="fecha_inicio">Fecha inicio</th>
+                    <th class="fecha_fin">Fecha fin</th>
+                    <th class="estado">Estado</th>
+                    <th colspan="3" class="acción">Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let documento of documentos">
+                    <td>{{documento.id}}</td>
+                    <td>{{documento.nombre}}</td>
+                    <td>{{documento.parametros?.valor}}</td>
+                    <td>{{documento.fecha_ini}}</td>
+                    <td>{{documento.fecha_fin}}</td>
+                    <td class="estado">{{documento.estado}}</td>
+                    <td class="acción">
+                        <img src="/assets/pictures/borrar.png" class="borrar"
+                            (click)="documento.id && Eliminar(documento.id)">
+                        <img src="/assets/pictures/editar.png" class="editar"
+                            [routerLink]="['/home/documento_intervencion/edit', documento.id]">
+                        <img src="/assets/pictures/descargar.png" class="descargar">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

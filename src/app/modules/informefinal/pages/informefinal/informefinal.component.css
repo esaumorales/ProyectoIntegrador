@@ -1,0 +1,151 @@
+.borde {
+  position     : relative;
+  top          : 0.5vw;
+  left         : 2vw;
+  width        : 78vw;
+  height       : 35vw;
+  border-radius: 1.5vw;
+  border       : 0.35vw solid #F7A800;
+  background   : rgba(255, 255, 255, 0.90);
+}
+
+.boton_regresar {
+  margin-top : 1.5vw;
+  margin-left: 1.5vw;
+  width      : 2vw;
+  height     : 2vw;
+}
+
+.documento_intervencion {
+  position   : relative;
+  left       : 25vw;
+  top        : -2vw;
+  color      : #014277;
+  font-family: Squada One;
+  font-size  : 4vw;
+  font-style : normal;
+  font-weight: 200;
+  line-height: normal;
+  width      : 19.5vw;
+}
+
+.crear_buscar {
+  display: flex;
+  width  : 79vw;
+}
+
+.boton_crear {
+  position     : relative;
+  top          : 0.15vw;
+  left         : -3vw;
+  padding-top  : 0.5vw;
+  width        : 9vw;
+  height       : 2vw;
+  border-radius: 0.5vw;
+  background   : #F7A800;
+  opacity      : 90%;
+}
+
+.crear {
+  text-align     : center;
+  color          : #014277;
+  font-family    : Comic Neue;
+  font-size      : 1.5VW;
+  line-height    : normal;
+  text-decoration: none;
+}
+
+.buscar {
+  padding-top  : 0.7vw;
+  position     : relative;
+  top          : 0vw;
+  left         : 2vw;
+  width        : 73vw;
+  height       : 2.2vw;
+  border-radius: 1vw;
+  background   : rgba(163, 163, 163, 0.37);
+  padding-left : 1vw;
+
+}
+
+.tabla {
+  width           : 74vw;
+  margin          : 1.2vw auto 0;
+  border          : 0.3vw solid #F7A800;
+  background-color: #014277;
+  border-collapse : collapse;
+}
+
+th,
+td {
+  padding        : 0.7vw;
+  border         : 0.12vw solid rgba(255, 255, 255, 0.50);
+  border-collapse: collapse;
+  color          : white;
+  font-family    : Comic Neue;
+  font-size      : 1vw;
+  font-style     : normal;
+  font-weight    : 650;
+  line-height    : normal;
+  text-align     : center;
+
+}
+
+.id {
+  width     : 0.5vw;
+  text-align: center;
+}
+
+.acción {
+  width     : 5vw;
+  text-align: center;
+}
+
+.borrar {
+  margin-right: 1vw;
+  height      : 2vw;
+}
+
+.editar {
+  margin-right: 1vw;
+  height      : 2vw;
+  padding-left: 1.5vw;
+}
+
+.select {
+  border-radius: 0.5vw;
+  border       : 0.13vw solid #014277;
+  background   : #FFF;
+  width        : 25vw;
+  height       : 1.6vw;
+  display      : flexbox;
+  position     : relative;
+  left         : 0.5vw;
+}
+
+.buscar_estado {
+  border-radius: 0.5vw;
+  border       : 0.13vw solid #014277;
+  background   : #FFF;
+  width        : 15vw;
+  height       : 1.6vw;
+  display      : flexbox;
+  position     : relative;
+  left         : 1vw;
+}
+
+.texto_proyecto {
+  position    : relative;
+  font-family : Comic Neue;
+  padding-left: 2vw;
+}
+
+.texto_semestre {
+  position    : relative;
+  font-family : Comic Neue;
+  padding-left: 10vw;
+}
+
+.nombre_afiliacion {
+  width: 30vw;
+}

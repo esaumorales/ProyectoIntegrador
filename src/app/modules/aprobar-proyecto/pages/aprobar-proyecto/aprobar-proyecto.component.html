@@ -1,0 +1,69 @@
+<div class="contenedor">
+    <div class="borde">
+        <div class="encabezado">
+            <a href="/menu">
+            <img src="/assets/pictures/regresar.png" class="regresar"></a>
+            <h1 class="titulo">Aprobar - Proyecto</h1>
+
+        </div>
+        <div class="filtros-container">
+            <div class="filtro">
+                <label class="texto_buscar">Tipo de proyecto:</label>
+                <select class="buscar">
+                    <option>Selecciona</option>
+                    <option>Tipo01</option>
+                    <option>Tipo02</option>
+                    <option>Tipo03</option>
+                </select>
+                <label class="texto_buscar">Modalidad:</label>
+                <select class="buscar">
+                    <option>Selecciona</option>
+                    <option>Modalidad01</option>
+                    <option>Modalidad02</option>
+                    <option>Modalidad03</option>
+                </select>
+                <label class="texto_buscar">Carrera:</label>
+                <select class="buscar">
+                    <option>Selecciona</option>
+                    <option>Ingenieria de Sistemas</option>
+                    <option>Ingenieria Ambiental</option>
+                    <option>Arquitectura</option>
+                </select>
+                <label class="texto_buscar">Nro de Acuerdo</label>
+                <select class="buscar">
+                    <option>Nro</option>
+                    <option>40235</option>
+                    <option>20223</option>
+                    <option>23564</option>
+                </select>
+            </div>
+        </div>
+        
+        <table class="tabla">
+            <thead>
+                <th class="id">N°</th>
+                <th class="nombre_afiliacion">Nombre de afiliación</th>
+                <th class="tipo_afiliacion">Tipo de proyecto</th>
+                <th class="fecha_inicio">Nro de acuerdo</th>
+                <th class="estado">Estado</th>
+                <th colspan="3" class="accion">Acción</th>
+            </thead>
+            <tbody>
+                <tr th:each="convenio:${convenios}">
+                    <td scope="row" th:text="${convenio.id_co}"></td>
+                    <td th:text="${convenio.nombre_conv}"></td>
+                    <td th:text="${convenio.fecha_inicio}"></td>
+                    <td th:text="${convenio.fecha_fin}"></td>
+                    <td th:text="${convenio.estado}"></td>
+                    <td class="accion">
+                        <span [routerLink]="['/home/aprobar/vista']" class="material-symbols-outlined" >visibility</span>
+
+                        <span [routerLink]="['/home/aprobar/comentar']" class="material-symbols-outlined" >chat</span>
+                    </td>
+                </tr>
+            </tbody>
+
+
+            </table>
+    </div>
+</div>

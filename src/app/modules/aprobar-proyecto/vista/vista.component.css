@@ -1,0 +1,103 @@
+/* PARA TODO EL CONTENEDOR */
+.contenedor {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+/* PARA EL BORDE DEL CONTENIDO */
+.borde {
+    border: 5px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #F7A800;
+    background-color: rgb(255, 255, 255);
+    width: 1300px;
+    height: 600px;
+}
+
+/* PARA EL BOTON Y EL TITULO */
+.encabezado {
+    color: #014277;
+    display: flex;
+}
+.titulo {
+    flex: auto;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-family: 'Squada One';
+    padding: 10px;
+
+}
+.regresar {
+    padding: 5px;
+}
+
+
+
+/* PARA LA BARRA DE BUSQUEDA*/
+.filtros-container {
+    text-align: center;
+    border-radius: 10px;
+    background: #A3A3A3;
+    width: 1200px;
+    margin: auto;
+    height: 40px;
+    
+}
+.filtro {
+width: 1100px;
+padding-top: 10px;
+grid-template-rows: repeat(4, auto);
+}
+.texto_buscar {
+    padding:35px;
+}
+.buscar {
+    background: white;
+    border-style: solid;
+    border: #014277;
+    border-radius: 5px;
+}
+
+/* PARA LA TABLA */
+.tabla {
+    border-radius: 2px;
+    border-style: solid ;
+    border-color: #F7A800;
+    background: #014277;
+
+    width: 1200px;
+    margin: 10px auto;
+
+    color: white;
+    border-collapse: collapse;
+    
+}
+th,
+td {
+    padding: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    border-collapse: collapse;
+    color: white;
+    font-family: Comic Neue;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: normal;
+}
+
+/* PARA LAS ACCIONES */
+
+.accion {
+    text-align: center;
+}
+.material-symbols-outlined {
+    margin-right: 5px;
+}
+
+ 
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+        <title>Menú</title>
+    </head>
+
+    <body>
+        <div id="home">
+            <div class="contenido_opciones">
+                <div class="margen">
+                    <a class="opcion" [routerLink]="['/home/documento_intervencion']">
+                        <img src="/assets/pictures/convenio.png" class="convenio">
+                        <p class="texto">Registrar intervención</p>
+                    </a>
+                </div>
+                <div class="margen">
+                    <a class="opcion" [routerLink]="['/home/proyecto']">
+                        <img src="/assets/pictures/proyecto.png" class="proyecto">
+                        <p class="texto">Perfil de proyecto</p>
+                    </a>
+                </div>
+                    <div class="margen">
+                        <a class="opcion" [routerLink]="['/home/aprobar']">
+                            <img src="/assets/pictures/aprobado.png" class="aprobado">
+                            <p class="texto">Aprobación de proyectos</p>
+                        </a>
+                    </div>
+                
+                <div class="margen">
+                    <a class="opcion" [routerLink]="['/home/grupos']">
+                        <img src="/assets/pictures/grupo.png" class="grupo">
+                        <p class="texto">Gestión de grupos</p>
+                    </a>
+                </div>
+                <div class="margen">
+                    <a class="opcion" [routerLink]="['/home/asistencia']">
+                        <img src="/assets/pictures/asistencia.png" class="gestion_informe">
+                        <p class="texto">Gestion de asistencia</p>
+                    </a>
+                </div>
+                <div class="margen">
+                    <a class="opcion" [routerLink]="['/home/validacionevidencia']">
+                        <img src="/assets/pictures/evidencia.png" class="gestion_evidencia">
+                        <p class="texto">Gestión de evidencia</p>
+                    </a>
+                </div>
+                <div class="margen">
+                    <a class="opcion" [routerLink]="['/home/informefinal']">
+                        <img src="/assets/pictures/informe final.png" class="gestion_informe">
+                        <p class="texto">Gestión de informe final</p>
+                    </a>
+                </div>
+                <div class="margen">
+                    <a class="opcion" [routerLink]="['/home/horas']">
+                        <img src="/assets/pictures/gestion-de-actividad.png" class="gestion_actividad">
+                        <p class="texto">Reporte de Horas</p>
+                    </a>
+                </div>
+            
+            </div>
+            <div class="barra">
+                <img src="/assets/pictures/upeu.png" class="upeu_derecha">
+                <img src="/assets/pictures/persona.png" class="persona">
+                <p class="nombre_sede"><b>Nombre Completo</b></p>
+                <p class="sede">SEDE</p>
+                <p class="nombre_sede"><b>UPeU - Lima</b></p>
+                <div class="cerrar_sesion">
+                    <p class="sesion"><a th:href="@{/login}" class="sesion">Cerrar Sesión </a> </p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
