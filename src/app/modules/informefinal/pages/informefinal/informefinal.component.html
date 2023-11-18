@@ -44,9 +44,9 @@
       <tr *ngFor="let proyecto of proyectos">
         <td>{{proyecto.id}}</td>
         <td>{{proyecto.proyecto?.nombre_proyecto}}</td>
-        <td>{{proyecto.escu_prof?.facultad}}</td>
-        <td>{{proyecto.escu_prof?.carrera}}</td>
-        <td>{{proyecto.parametros?.tipos}}</td>
+        <td>{{proyecto.proyecto?.escu_prof?.facultad}}</td>
+        <td>{{proyecto.proyecto?.escu_prof?.carrera}}</td>
+        <td>{{proyecto.proyecto?.parametros?.tipos}}</td>
         <td class="acción">
 
          <a [routerLink]="['/home/informefinal/add']"> <img src="/assets/pictures/editar.png" class="editar"></a>
