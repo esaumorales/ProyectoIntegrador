@@ -1,11 +1,11 @@
-import { ValidacioneviService } from './../services/validacionevi.service';
+import { ValidacioneviService } from '../services/validacionevi.service';
 import { Component } from '@angular/core';
 import { Evidencia } from 'src/app/models/evidencia';
 
 @Component({
   selector: 'app-validacion-Evidencia',
-  templateUrl: './validacion-Evidencia.component.html',
-  styleUrls: ['./validacion-Evidencia.component.css']
+  templateUrl: './validacionEvidencia.component.html',
+  styleUrls: ['./validacionEvidencia.component.css']
 })
 export class ValidacionEvidenciaComponent {
   evidencias: Evidencia[] = [];

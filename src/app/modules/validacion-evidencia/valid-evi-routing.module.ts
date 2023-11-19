@@ -1,12 +1,11 @@
-
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ValidacionEvidenciaComponent } from './pages/validacionevidencia/validacionevidencia.component';
+import { ValidEviComponent } from './pages/valid-evi/valid-evi.component';
 
 const routes: Routes = [
   {
     path:'',
-    component: ValidacionEvidenciaComponent, outlet:'child'
+    component: ValidEviComponent, outlet:'child'
   }
 ];
 
@@ -14,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ValidacionEvidenciaRoutingModule { }
+export class ValidEviRoutingModule { }

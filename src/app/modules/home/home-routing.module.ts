@@ -11,7 +11,6 @@ import { DocumentoIntervencionComponent } from '../documento-intervencion/listar
 import { AddIntervencionComponent } from '../documento-intervencion/añadir/add-intervencion/add-intervencion.component';
 import { EditIntervencionComponent } from '../documento-intervencion/editar/edit-intervencion/edit-intervencion.component';
 import { CursoComponent } from '../curso/pages/curso/curso.component';
-import { ValidacionEvidenciaComponent } from '../validacion-evidencia/pages/validacion-evidencia/validacion-evidencia.component';
 import { AprobarProyectoComponent } from '../aprobar-proyecto/pages/aprobar-proyecto/aprobar-proyecto.component';
 import { ComentarioComponent } from '../aprobar-proyecto/comentario/comentario.component';
 import { ComentarComponent } from '../aprobar-proyecto/comentar/comentar.component';
@@ -22,6 +21,8 @@ import { ListaestudiantesComponent } from '../asistencia/page/listaestudiantes/l
 import { IntegrantesComponent } from '../grupos/pages/integrantes/integrantes.component';
 import { InformefinalComponent } from '../informefinal/pages/informefinal/informefinal.component';
 import { AddinformefinalComponent } from '../informefinal/pages/addinformefinal/addinformefinal.component';
+import { ValidEviComponent } from '../validacion-evidencia/pages/valid-evi/valid-evi.component';
+import { ValidacionEvidenciaComponent } from '../validacion-evidencia/pages/validacionevidencia/validacionevidencia.component';
 
 
 const routes: Routes = [
@@ -87,6 +88,11 @@ const routes: Routes = [
     loadChildren: () => import('../validacion-evidencia/validacion-evidencia.module').then(m => m.ValidacionEvidenciaModule)
   },
   {
+    path:'validevi',
+    component: ValidEviComponent,
+    loadChildren: () => import('../validacion-evidencia/valid-evi.module').then(m => m.ValidEviModule)
+  },
+  {
     path:'aprobar',
     component: AprobarProyectoComponent,
     loadChildren: () => import('../aprobar-proyecto/aprobar-proyecto.module').then(m => m.AprobarProyectoModule)
@@ -101,7 +107,7 @@ const routes: Routes = [
     component: ComentarioComponent,
     loadChildren: () => import('../aprobar-proyecto/comentario.module').then(m => m.ComentarioModule)
   },
- 
+
   {
     path:'grupos',
     component: ListaproyecGruposComponent,
