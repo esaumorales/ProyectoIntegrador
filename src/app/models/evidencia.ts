@@ -1,3 +1,4 @@
+import { integrantes } from './integrantes.';
 
 import { Escu_prof } from './Escu_prof';
 import { Parametros } from './Parametros';
@@ -11,4 +12,6 @@ export class Evidencia{
   parametros?: Parametros;
   tip_Proyect?: Tip_proyec;
   escu_Prof?: Escu_prof;
+  integrantes?: integrantes;
+  evidencia?: Evidencia;
 }

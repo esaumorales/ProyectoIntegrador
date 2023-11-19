@@ -8,7 +8,7 @@ import { Evidencia } from 'src/app/models/evidencia';
   styleUrls: ['./validacionEvidencia.component.css']
 })
 export class ValidacionEvidenciaComponent {
-  evidencias: Evidencia[] = [];
+  evidencia: Evidencia[] = [];
 
   constructor(
     private validacioneviService: ValidacioneviService
@@ -16,7 +16,7 @@ export class ValidacionEvidenciaComponent {
 
   ngOnInit(): void {
     this.validacioneviService.listar().subscribe(data => {
-      this.evidencias = data
+      this.evidencia = data
       console.log(data)
     });
     ;
@@ -28,7 +28,7 @@ export class ValidacionEvidenciaComponent {
       // Aquí puedes realizar alguna acción después de eliminar el documento, si es necesario.
       // Por ejemplo, puedes actualizar la lista de documentos.
       this.validacioneviService.listar().subscribe(data => {
-        this.evidencias = data;
+        this.evidencia = data;
         console.log(data);
       });
     });
