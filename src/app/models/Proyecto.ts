@@ -1,3 +1,5 @@
+import { Evidencia } from 'src/app/models/evidencia';
+import { integrantes } from './integrantes.';
 import { Ciclo } from "./Ciclo";
 import { Coordinador } from "./Coordinador";
 import { Documento } from "./documento";
@@ -26,5 +28,6 @@ export class Proyecto {
     tip_proyec?: Tip_proyec;
     nacuerdo?:number;
     proyecto?: Proyecto;
-    
+    integrantes?: integrantes;
+    evidencia?:Evidencia;
 }

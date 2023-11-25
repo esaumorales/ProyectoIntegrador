@@ -16,5 +16,4 @@ export class Informefinal {
   Escue_Prof?: Escu_prof;
   coordinador?: Coordinador;
   documento?: Documento;
-
 }

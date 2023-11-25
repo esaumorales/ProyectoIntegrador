@@ -1,5 +1,6 @@
 import { ValidacioneviService } from '../services/validacionevi.service';
 import { Component } from '@angular/core';
+import { Proyecto } from 'src/app/models/Proyecto';
 import { Evidencia } from 'src/app/models/evidencia';
 
 @Component({
@@ -8,7 +9,7 @@ import { Evidencia } from 'src/app/models/evidencia';
   styleUrls: ['./validacionEvidencia.component.css']
 })
 export class ValidacionEvidenciaComponent {
-  evidencia: Evidencia[] = [];
+  proyecto: Proyecto[] = [];
 
   constructor(
     private validacioneviService: ValidacioneviService
@@ -16,7 +17,7 @@ export class ValidacionEvidenciaComponent {
 
   ngOnInit(): void {
     this.validacioneviService.listar().subscribe(data => {
-      this.evidencia = data
+      this.proyecto = data
       console.log(data)
     });
     ;
@@ -28,7 +29,7 @@ export class ValidacionEvidenciaComponent {
       // Aquí puedes realizar alguna acción después de eliminar el documento, si es necesario.
       // Por ejemplo, puedes actualizar la lista de documentos.
       this.validacioneviService.listar().subscribe(data => {
-        this.evidencia = data;
+        this.proyecto = data;
         console.log(data);
       });
     });

@@ -44,11 +44,11 @@
             </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let evidencias of evidencia">
-            <td>{{evidencias.id}}</td>
-            <td>{{evidencias.proyecto?.nombre_proyecto}}</td>
-            <td>{{evidencias.proyecto?.parametros?.tipos}}</td>
-            <td>{{evidencias.proyecto?.parametros?.valor}}</td>
+          <tr *ngFor="let proyecto of proyecto">
+            <td>{{proyecto.id}}</td>
+            <td>{{proyecto.proyecto?.nombre_proyecto}}</td>
+            <td>{{proyecto.proyecto?.parametros?.tipos}}</td>
+            <td>{{proyecto.proyecto?.parametros?.valor}}</td>
             <td class="accion">
               <a [routerLink]="['/home/validevi']"><img src="/assets/pictures/check.png" class="check" width="25vw" ></a>
               <style>
