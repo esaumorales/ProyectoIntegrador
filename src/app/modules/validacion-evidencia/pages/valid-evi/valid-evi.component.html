@@ -24,6 +24,18 @@
           <option>Departamento2</option>
           <option>Departamento3</option>
         </select>
+        <table class="tabla">
+          <tbody>
+          <tr *ngFor="let evidencia  of evidencia ">
+              <td>{{evidencia.alumno?.persona?.nombre}}</td>
+              <td>{{evidencia.parametros?.valor}}</td>
+              <td>{{evidencia.porcentaje}}</td>
+              <td>{{evidencia.roles?.horas}}</td>
+              <td>{{evidencia.roles?.nota}}</td>
+              <td>{{evidencia.parametros?.estado}}</td>
+            </tr>
+          </tbody>
+      </table>
       </div>
       <a [routerLink]="['/home/grupos/integrantes']"><button class="integrantes">Informe</button></a>
     </div>

@@ -127,3 +127,11 @@
 button {
   font-family: Impact;
 }
+.tabla {
+  width           : 30vw;
+  height          : 0vw;
+  /* Establece los márgenes izquierdo y derecho en "auto" para centrar horizontalmente */
+  background-color: #014277;
+  margin-left: 1vw;
+  margin-top: -1.2vw;
+}

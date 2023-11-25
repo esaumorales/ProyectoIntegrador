@@ -1,3 +1,6 @@
+import { Alumno } from 'src/app/models/Alumno';
+import { Roles } from 'src/app/models/Roles';
+import { Persona } from './Persona';
 import { Cursoarticulado } from './cursoaarticu';
 import { integrantes } from './integrantes.';
 
@@ -14,4 +17,7 @@ export class Evidencia{
   escu_Prof?: Escu_prof;
   integrantes?: integrantes;
   cursoarticulado?: Cursoarticulado;
+  persona?: Persona;
+  roles?: Roles;
+  alumno?: Alumno;
 }
