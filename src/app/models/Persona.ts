@@ -1,3 +1,4 @@
+import { Proyecto } from 'src/app/models/Proyecto';
 export class Persona {
     id?: number;
     apeliido_pat?: string;
@@ -7,4 +8,5 @@ export class Persona {
     f_nacimiento?: Date;
     nombre?: string;
     telefono?: number;
+    proyecto?:Proyecto;
 }

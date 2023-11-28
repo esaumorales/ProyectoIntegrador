@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Evidencia } from 'src/app/models/evidencia';
 import { ValideviService } from '../services/validevi.service';
+import { Proyecto } from 'src/app/models/Proyecto';
 
 @Component({
   selector: 'app-valid-evi',
@@ -8,13 +9,13 @@ import { ValideviService } from '../services/validevi.service';
   styleUrls: ['./valid-evi.component.css'],
 })
 export class ValidEviComponent {
-  evidencia: Evidencia[] = [];
+  proyecto: Proyecto[] = [];
 
   constructor(private valideviService: ValideviService) {}
 
   ngOnInit(): void {
     this.valideviService.listar().subscribe((data) => {
-      this.evidencia = data;
+      this.proyecto = data;
       console.log(data);
     });
   }
@@ -24,7 +25,7 @@ export class ValidEviComponent {
       // Aquí puedes realizar alguna acción después de eliminar el documento, si es necesario.
       // Por ejemplo, puedes actualizar la lista de documentos.
       this.valideviService.listar().subscribe((data) => {
-        this.evidencia = data;
+        this.proyecto = data;
         console.log(data);
       });
     });

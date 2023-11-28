@@ -5,7 +5,7 @@
 
 <div class="borde">
     <div class="regresar">
-        <a href="/menu"><img src="/assets/pictures/regresar.png" class="boton_regresar"></a>
+        <a  [routerLink]="['/home/validacionevidencia']"><img src="/assets/pictures/regresar.png" class="boton_regresar"></a>
         <p class="proyecto">Lista de evidencia</p>
     </div>
     <div class="crear_buscar">
@@ -46,9 +46,9 @@
         <tbody>
           <tr *ngFor="let proyecto of proyecto">
             <td>{{proyecto.id}}</td>
-            <td>{{proyecto.proyecto?.nombre_proyecto}}</td>
-            <td>{{proyecto.proyecto?.parametros?.tipos}}</td>
-            <td>{{proyecto.proyecto?.parametros?.valor}}</td>
+            <td>{{proyecto.nombre_proyecto}}</td>
+            <td>{{proyecto.parametros?.tipos}}</td>
+            <td>{{proyecto.parametros?.valor}}</td>
             <td class="accion">
               <a [routerLink]="['/home/validevi']"><img src="/assets/pictures/check.png" class="check" width="25vw" ></a>
               <style>

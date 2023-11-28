@@ -1,0 +1,73 @@
+<p>grupos works!</p>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&family=Squada+One&display=swap"
+    rel="stylesheet">
+
+<div class="borde">
+    <div class="regresar">
+        <a href="/menu"><img src="/assets/pictures/regresar.png" class="boton_regresar"></a>
+        <p class="titulo">Proyectos - Grupos</p>
+    </div>
+    <div class="buscar">
+        <label class="texto_buscar">Tipo de proyecto: </label>
+        <select class="buscador1">
+            <option>tipo</option>
+            <option>Departamento1</option>
+            <option>Departamento2</option>
+            <option>Departamento3</option>
+        </select>
+        <label class="texto_buscar">Modalidad: </label>
+        <select class="buscador2">
+            <option>Modalidad</option>
+            <option>Departamento1</option>
+            <option>Departamento2</option>
+            <option>Departamento3</option>
+        </select>
+        <label class="texto_buscar">Carrera: </label>
+        <select class="buscador3">
+            <option>Carrera</option>
+            <option>Departamento1</option>
+            <option>Departamento2</option>
+            <option>Departamento3</option>
+        </select>
+        <label class="texto_buscar">Semetre: </label>
+        <select class="buscador4">
+            <option>Semetre</option>
+            <option>Departamento1</option>
+            <option>Departamento2</option>
+            <option>Departamento3</option>
+        </select>
+    </div>
+    <table class="tabla">
+        <tr>
+            <th class="id">N°</th>
+            <th class="nombre_afiliacion">Nombre de afiliación</th>
+            <th class="tipo_afiliacion">Tipo de afiliación</th>
+            <th class="fecha_inicio">Fecha inicio</th>
+            <th class="fecha_fin">Fecha fin</th>
+            <th class="estado">Estado</th>
+            <th colspan="3" class="acción">Acción</th>
+
+
+        </tr>
+        <tr th:each="convenio:${convenios}">
+            <td scope="row" th:text="${convenio.id_co}"></td>
+            <td th:text="${convenio.nombre_conv}"></td>
+            <td th:text="${convenio.fecha_inicio}"></td>
+            <td th:text="${convenio.fecha_fin}"></td>
+            <td th:text="${convenio.estado}"></td>
+            <td class="estado">En proceso </td>
+            <td class="acción">
+                <a th:href="@{/documento_intervencion/delete/} + ${convenio.id_co}" title="Editar Registro"><img
+                        src="/assets/pictures/borrar.png" class="borrar"></a>
+                <a th:href="@{/documento_intervencion/edit/} + ${convenio.id_co}" title="Eliminar Registro"><img
+                        src="/assets/pictures/editar.png" class="editar"></a>
+                <a th:href="@{/documento_intervencion/update/} + ${convenio.id_co}" title="Eliminar Registro"><img
+                        src="/assets/pictures/descargar.png" class="descargar"></a>
+
+            </td>
+        </tr>
+    </table>
+
+</div>

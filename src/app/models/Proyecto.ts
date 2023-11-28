@@ -1,3 +1,4 @@
+import { Alumno } from './Alumno';
 import { Evidencia } from 'src/app/models/evidencia';
 import { integrantes } from './integrantes.';
 import { Ciclo } from "./Ciclo";
@@ -7,6 +8,7 @@ import { Escu_prof } from "./Escu_prof";
 import { Modalidad } from "./Modalidad";
 import { Parametros } from "./Parametros";
 import { Tip_proyec } from "./Tip_proyect";
+import { Persona } from './Persona';
 
 
 export class Proyecto {
@@ -30,4 +32,6 @@ export class Proyecto {
     proyecto?: Proyecto;
     integrantes?: integrantes;
     evidencia?:Evidencia;
+    alumno?: Alumno;
+    persona?: Persona;
 }

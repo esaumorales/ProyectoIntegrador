@@ -20,4 +20,6 @@ export class Evidencia{
   persona?: Persona;
   roles?: Roles;
   alumno?: Alumno;
+  evidencia?: Evidencia;
+  proyecto?: Proyecto;
 }
