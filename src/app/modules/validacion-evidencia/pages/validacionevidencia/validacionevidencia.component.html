@@ -47,7 +47,7 @@
           <tr *ngFor="let proyecto of proyecto">
             <td>{{proyecto.id}}</td>
             <td>{{proyecto.nombre_proyecto}}</td>
-            <td>{{proyecto.parametros?.tipos}}</td>
+            <td>{{proyecto.tip_proyec?.nombre_tipro}}</td>
             <td>{{proyecto.parametros?.valor}}</td>
             <td class="accion">
               <a [routerLink]="['/home/validevi']"><img src="/assets/pictures/check.png" class="check" width="25vw" ></a>
