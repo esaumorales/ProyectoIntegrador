@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddvalidComponent } from './addvalid.component';
+import { InformeComponent } from './informe.component';
 
-describe('AddvalidComponent', () => {
-  let component: AddvalidComponent;
-  let fixture: ComponentFixture<AddvalidComponent>;
+describe('InformeComponent', () => {
+  let component: InformeComponent;
+  let fixture: ComponentFixture<InformeComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AddvalidComponent]
+      declarations: [InformeComponent]
     });
-    fixture = TestBed.createComponent(AddvalidComponent);
+    fixture = TestBed.createComponent(InformeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

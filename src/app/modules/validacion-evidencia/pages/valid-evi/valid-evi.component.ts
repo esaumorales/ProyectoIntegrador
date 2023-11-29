@@ -9,6 +9,7 @@ import { Proyecto } from 'src/app/models/Proyecto';
   styleUrls: ['./valid-evi.component.css'],
 })
 export class ValidEviComponent {
+
   proyecto: Proyecto[] = [];
 
   constructor(private valideviService: ValideviService) {}

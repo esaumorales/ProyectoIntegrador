@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterLink, RouterModule, Routes } from '@angular/router';
 import { AprobarProyectoComponent } from './pages/aprobar-proyecto/aprobar-proyecto.component';
 
 const routes: Routes = [
@@ -12,6 +12,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule, RouterLink]
 })
 export class AprobarProyectoRoutingModule { }

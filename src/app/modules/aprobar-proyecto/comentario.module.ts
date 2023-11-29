@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ComentarioRoutingModule } from './comentario-routing.module';
 import { ComentarioComponent } from './comentario/comentario.component';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 
 
 
@@ -22,7 +22,8 @@ export interface Tile {
   imports: [
     CommonModule,
     ComentarioRoutingModule,
-    RouterModule
+    RouterModule,
+    RouterLink
 
   ]
 })

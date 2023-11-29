@@ -4,18 +4,19 @@ import { CommonModule } from '@angular/common';
 import { AprobarProyectoRoutingModule } from './aprobar-proyecto-routing.module';
 import { AprobarProyectoComponent } from './pages/aprobar-proyecto/aprobar-proyecto.component';
 import {MatButtonModule} from '@angular/material/button';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AprobarProyectoComponent,
-    
+
   ],
   imports: [
     CommonModule,
     AprobarProyectoRoutingModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+    RouterLink
   ]
 })
 export class AprobarProyectoModule { }

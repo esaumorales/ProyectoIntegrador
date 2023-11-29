@@ -9,7 +9,7 @@ import { MatInputModule} from '@angular/material/input';
 import { FormsModule} from '@angular/forms';
 import { MatDialogModule} from '@angular/material/dialog';
 import { ComentarComponent } from './comentar/comentar.component';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 
 
 
@@ -27,9 +27,10 @@ import { RouterModule } from '@angular/router';
     MatInputModule,
     FormsModule,
     MatDialogModule,
-    RouterModule
+    RouterModule,
+    RouterLink
   ]
 })
 export class ComentarModule {
-  
+
 }

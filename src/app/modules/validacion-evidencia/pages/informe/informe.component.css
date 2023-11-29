@@ -1,0 +1,123 @@
+/* PARA TODO EL CONTENEDOR */
+.contenedor {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+/* PARA EL BORDE DEL CONTENIDO */
+.borde {
+  border: 5px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #F7A800;
+  background-color: rgb(255, 255, 255);
+  width: 1300px;
+  height: 600px;
+}
+
+/* PARA EL BOTON Y EL TITULO */
+.encabezado {
+  color: #014277;
+  display: flex;
+}
+.titulo {
+  flex: auto;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-family: 'Squada One';
+  padding: 10px;
+
+}
+.regresar {
+  padding: 5px;
+}
+
+/* PARA LA TABLA */
+.tabla {
+  border-radius: 2px;
+  border-style: solid ;
+  border-color: #F7A800;
+  background: rgba(169, 169, 169, 0.16);;
+
+  width: 1200px;
+  margin: 10px auto;
+
+  color: white;
+  border-collapse: collapse;
+
+}
+th,
+td {
+  padding: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-collapse: collapse;
+  color: rgb(0, 0, 0);
+  font-family: Comic Neue;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+}
+
+/* PARA EL NUMERO DE ACUERDO Y ESTADO */
+.atributos-container {
+  text-align: center;
+  width: 92%; /* Ajustado para que no sea más ancho que el ancho del viewport */
+  margin: auto;
+  padding: 4px; /* Añadido espacio alrededor del contenedor */
+  position: relative;
+  top:360px;
+}
+
+.formulario {
+  padding-top: 4px;
+}
+.text1 {
+  position: relative;
+  left: 26%; /* Utilizando un valor relativo para el desplazamiento */
+  font-family: 'Squada One';
+  color: red;
+}
+.form1 {
+  background: white;
+  border: 3px solid #014277; /* Corrección de la propiedad border */
+  border-radius: 5px;
+  position: relative;
+  left: 26%; /* Utilizando un valor relativo para el desplazamiento */
+  padding: 6px;
+}
+.text2 {
+  position: relative;
+  left: 31%; /* Utilizando un valor relativo para el desplazamiento */
+  font-family: 'Squada One';
+  color: red;
+}
+.form2 {
+  padding: 6px;
+  position: relative;
+  left: 31%; /* Utilizando un valor relativo para el desplazamiento */
+  border: 3px solid #F7A800; /* Corrección de la propiedad border */
+  border-radius: 5px;
+}
+
+.coment {
+  background-color: #F7A800;
+  color: #014277;
+  border: none;
+  border-radius: 4px; /* Añade esquinas redondeadas */
+  padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+  font-family: 'Squada one';
+}
+
+.estado {
+  text-align: center;
+}
+
+.id {
+  text-align: center;
+}
