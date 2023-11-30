@@ -222,6 +222,8 @@ td {
   font-style     : normal;
   font-weight    : 650;
   line-height    : normal;
+  text-align     : center;
+
 }
 
 
@@ -503,4 +505,3 @@ td {
   border-collapse : collapse;
   overflow-y      : auto
 }
-

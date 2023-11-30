@@ -140,6 +140,8 @@ td {
   border-top     : 3px solid #CFCFCF;
   text-align     : center;
   overflow       : hidden;
+  color          : white;
+  font-family  : 'Comic Neue';
 }
 
 .estado {
@@ -147,4 +149,11 @@ td {
   border-radius   : 20rem;
   width           : 4vw;
   padding-top     : -2vw;
+}
+.porcentaje {
+  background-color: #CFCFCF;
+  border-radius   : 20rem;
+  width           : 4vw;
+  padding-top     : -2vw;
+  color: #F2EAEB;
 }

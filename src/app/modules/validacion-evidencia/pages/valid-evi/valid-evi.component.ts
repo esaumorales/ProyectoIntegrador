@@ -1,7 +1,8 @@
+import { MatDialog } from '@angular/material/dialog';
 import { Component } from '@angular/core';
 import { Evidencia } from 'src/app/models/evidencia';
 import { ValideviService } from '../services/validevi.service';
-import { Proyecto } from 'src/app/models/Proyecto';
+import { InformeComponent } from '../informe/informe.component';
 
 @Component({
   selector: 'app-valid-evi',
@@ -9,26 +10,38 @@ import { Proyecto } from 'src/app/models/Proyecto';
   styleUrls: ['./valid-evi.component.css'],
 })
 export class ValidEviComponent {
+  title = 'angular-dialog';
+  evidencia: Evidencia[] = [];
+  constructor(
+    private valideviService: ValideviService,
+    private MatDialog: MatDialog
+  ) {}
 
-  proyecto: Proyecto[] = [];
-
-  constructor(private valideviService: ValideviService) {}
-
-  ngOnInit(): void {
-    this.valideviService.listar().subscribe((data) => {
-      this.proyecto = data;
-      console.log(data);
+  openDialog() {
+    this.MatDialog.open(InformeComponent, {
+      width: '50rem',
+      height: '30rem',
     });
   }
+
+  ngOnInit(): void {
+    this.valideviService.listar().subscribe(data => {
+      this.evidencia = data
+      console.log(data)
+    });
+    ;
+  }
+
 
   Eliminar(id: number) {
     this.valideviService.eliminar(id).subscribe(() => {
       // Aquí puedes realizar alguna acción después de eliminar el documento, si es necesario.
       // Por ejemplo, puedes actualizar la lista de documentos.
-      this.valideviService.listar().subscribe((data) => {
-        this.proyecto = data;
+      this.valideviService.listar().subscribe(data => {
+        this.evidencia = data
         console.log(data);
       });
     });
   }
+
 }

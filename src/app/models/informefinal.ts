@@ -1,6 +1,7 @@
 import { Documento } from 'src/app/models/documento';
 import { Coordinador } from './Coordinador';
 import { Escu_prof } from './Escu_prof';
+import { Proyecto } from './Proyecto';
 
 
 export class Informefinal {
@@ -16,4 +17,5 @@ export class Informefinal {
   Escue_Prof?: Escu_prof;
   coordinador?: Coordinador;
   documento?: Documento;
+  proyecto?: Proyecto;
 }

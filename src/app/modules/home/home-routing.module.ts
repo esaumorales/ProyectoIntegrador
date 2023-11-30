@@ -1,3 +1,4 @@
+import { RegistrarinformefinalComponent } from './../informefinal/pages/registrarinformefinal/registrarinformefinal.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProyectoComponent } from '../proyecto/listar/proyecto/proyecto.component';
@@ -142,6 +143,11 @@ const routes: Routes = [
     path:'informefinal/add',
     component: AddinformefinalComponent,
     loadChildren: () => import('../informefinal/addinformefinal.module').then(m => m.AddinformefinalModule)
+  },
+  {
+    path:'informefinal/registrar',
+    component: RegistrarinformefinalComponent,
+    loadChildren: () => import('../informefinal/registrarinforme.module').then(m => m.RegistrarinformeModule)
   },
   {
     path:'**',

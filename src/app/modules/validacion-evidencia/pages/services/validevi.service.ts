@@ -7,7 +7,7 @@ import { Evidencia } from 'src/app/models/evidencia';
   providedIn: 'root'
 })
 export class ValideviService {
-  private url : string = 'http://localhost:8085/proyecto';
+  private url : string = 'http://localhost:8085/evidencias';
 
   constructor(private http: HttpClient) { }
 

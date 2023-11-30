@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { InformefinalRoutingModule } from './informefinal-routing.module';
 import { InformefinalComponent } from './pages/informefinal/informefinal.component';
 import { AddinformefinalComponent } from './pages/addinformefinal/addinformefinal.component';
+import { RegistrarinformefinalComponent } from './pages/registrarinformefinal/registrarinformefinal.component';
 
 
 @NgModule({
   declarations: [
     InformefinalComponent,
-    AddinformefinalComponent
+    AddinformefinalComponent,
+    RegistrarinformefinalComponent
   ],
   imports: [
     CommonModule,

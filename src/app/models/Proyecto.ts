@@ -1,7 +1,7 @@
 import { Roles } from './Roles';
 import { Alumno } from './Alumno';
 import { Evidencia } from 'src/app/models/evidencia';
-import { integrantes } from './integrantes.';
+import { Integrantes } from './integrantes.';
 import { Ciclo } from "./Ciclo";
 import { Coordinador } from "./Coordinador";
 import { Documento } from "./documento";
@@ -12,6 +12,7 @@ import { Tip_proyec } from "./Tip_proyect";
 import { Persona } from './Persona';
 import { Docente } from './Docente';
 import { Curso_Arti_Estu } from './Curso_arti_estu';
+import { Grupo } from './grupo';
 
 
 export class Proyecto {
@@ -33,12 +34,14 @@ export class Proyecto {
     tip_proyec?: Tip_proyec;
     nacuerdo?:number;
     proyecto?: Proyecto;
-    integrantes?: integrantes;
+    integrantes?: Integrantes;
     evidencia?:Evidencia;
     alumno?: Alumno;
     persona?: Persona;
     roles?: Roles;
     docente?: Docente;
     curso_arti_estu?: Curso_Arti_Estu;
+    grupo?: Grupo;
+
 
 }

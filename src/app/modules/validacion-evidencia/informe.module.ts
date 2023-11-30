@@ -9,12 +9,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { RouterLink, RouterModule } from '@angular/router';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { ValidacionEvidenciaComponent } from './pages/validacionevidencia/validacionevidencia.component';
 
 
 @NgModule({
   declarations: [
-    ValidacionEvidenciaComponent
   ],
   imports: [
     CommonModule,

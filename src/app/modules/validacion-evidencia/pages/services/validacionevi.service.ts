@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ValidacioneviService {
 
-  private url : string = 'http://localhost:8085/proyecto';
+  private url : string = 'http://localhost:8085/evidencias';
 
   constructor(private http: HttpClient) { }
 

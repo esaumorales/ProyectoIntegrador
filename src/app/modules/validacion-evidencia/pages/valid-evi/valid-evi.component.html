@@ -21,24 +21,24 @@
         </div>
         <select class="seleccionador">
           <option></option>
-          <option>Departamento1</option>
-          <option>Departamento2</option>
-          <option>Departamento3</option>
+          <option>Manos a la Obra</option>
+          <option>Ora del Codigo</option>
+          <option>AutoStop</option>
         </select>
         <table class="tabla">
           <tbody>
-          <tr *ngFor="let proyecto  of proyecto ">
-              <td>{{proyecto.integrantes?.curso_arti_estu?.roles?.parametros?.docente?.persona?.nombre}}</td>
-              <td>{{proyecto.parametros?.valor}}</td>
-              <td>{{proyecto.evidencia?.porcentaje}}</td>
-              <td>{{proyecto.roles?.horas}}</td>
-              <td>{{proyecto.roles?.nota}}</td>
-              <td class="estado">{{proyecto.parametros?.estado}}</td>
+          <tr *ngFor="let evidencia  of evidencia ">
+              <td>{{evidencia.integrantes?.curso_arti_estu?.curso_alumno?.alumno?.persona?.nombre}}</td>
+              <td>{{evidencia.integrantes?.roles?.funcion}}</td>
+              <td class="porcentaje">{{evidencia.porcentaje}}</td>
+              <td>{{evidencia.integrantes?.roles?.horas}}</td>
+              <td>{{evidencia.integrantes?.roles?.nota}}</td>
+              <td class="estado">{{evidencia.integrantes?.roles?.parametros?.estado}}</td>
             </tr>
           </tbody>
       </table>
       </div>
-      <a ><button mat-raised-button color="primary" [routerLink]="['/home/informe']" class="integrantes">Informe</button></a>
+      <a ><button mat-raised-button color="primary" (click)="openDialog()" class="integrantes">Informe</button></a>
       <div>
 
       </div>
@@ -53,25 +53,25 @@
         </div>
         <select class="seleccionador">
           <option></option>
-          <option>Departamento1</option>
-          <option>Departamento2</option>
-          <option>Departamento3</option>
+          <option>Manos a la Obra</option>
+          <option>Ora del Codigo</option>
+          <option>AutoStop</option>
         </select>
         <table class="tabla">
           <tbody>
-            <tr *ngFor="let proyecto  of proyecto ">
-              <td>{{proyecto.persona?.nombre}}</td>
-              <td>{{proyecto.parametros?.valor}}</td>
-              <td>{{proyecto.evidencia?.porcentaje}}</td>
-              <td>{{proyecto.evidencia?.roles?.horas}}</td>
-              <td>{{proyecto.evidencia?.roles?.nota}}</td>
-              <td class="estado">{{proyecto.parametros?.estado}}</td>
+            <tr *ngFor="let evidencia  of evidencia ">
+              <td>{{evidencia.integrantes?.curso_arti_estu?.curso_alumno?.alumno?.persona?.nombre}}</td>
+              <td>{{evidencia.integrantes?.roles?.funcion}}</td>
+              <td class="porcentaje">{{evidencia.porcentaje}}</td>
+              <td>{{evidencia.integrantes?.roles?.horas}}</td>
+              <td>{{evidencia.integrantes?.roles?.nota}}</td>
+              <td class="estado">{{evidencia.integrantes?.roles?.parametros?.estado}}</td>
             </tr>
           </tbody>
       </table>
       </div>
 
-      <a [routerLink]="['/home/']"><button class="integrantes">Informe</button></a>
+      <a ><button mat-raised-button color="primary" (click)="openDialog()" class="integrantes">Informe</button></a>
 
     </div>
 
@@ -89,25 +89,25 @@
         </div>
         <select class="seleccionador">
           <option></option>
-          <option>Departamento1</option>
-          <option>Departamento2</option>
-          <option>Departamento3</option>
+          <option>Manos a la Obra</option>
+          <option>Ora del Codigo</option>
+          <option>AutoStop</option>
         </select>
         <table class="tabla">
           <tbody>
-            <tr *ngFor="let proyecto  of proyecto ">
-              <td>{{proyecto.persona?.nombre}}</td>
-              <td>{{proyecto.parametros?.valor}}</td>
-              <td>{{proyecto.evidencia?.porcentaje}}</td>
-              <td>{{proyecto.evidencia?.roles?.horas}}</td>
-              <td>{{proyecto.evidencia?.roles?.nota}}</td>
-              <td class="estado">{{proyecto.parametros?.estado}}</td>
+            <tr *ngFor="let evidencia  of evidencia ">
+              <td>{{evidencia.integrantes?.curso_arti_estu?.curso_alumno?.alumno?.persona?.nombre}}</td>
+              <td>{{evidencia.integrantes?.roles?.funcion}}</td>
+              <td class="porcentaje">{{evidencia.porcentaje}}</td>
+              <td>{{evidencia.integrantes?.roles?.horas}}</td>
+              <td>{{evidencia.integrantes?.roles?.nota}}</td>
+              <td class="estado">{{evidencia.integrantes?.roles?.parametros?.estado}}</td>
             </tr>
           </tbody>
       </table>
       </div>
 
-      <a [routerLink]="['/home/']"><button class="integrantes">Informe</button></a>
+      <a><button mat-raised-button color="primary" (click)="openDialog()" class="integrantes">Informe</button></a>
     </div>
     <div class="contenedor_grupo">
       <div class="grupo">
@@ -119,24 +119,25 @@
         </div>
         <select class="seleccionador">
           <option></option>
-          <option>Departamento1</option>
-          <option>Departamento2</option>
-          <option>Departamento3</option>
+          <option>Manos a la Obra</option>
+          <option>Ora del Codigo</option>
+          <option>AutoStop</option>
         </select>
         <table class="tabla">
           <tbody>
-            <tr *ngFor="let proyecto  of proyecto ">
-              <td>{{proyecto.persona?.nombre}}</td>
-              <td>{{proyecto.parametros?.valor}}</td>
-              <td>{{proyecto.evidencia?.porcentaje}}</td>
-              <td>{{proyecto.evidencia?.roles?.horas}}</td>
-              <td>{{proyecto.evidencia?.roles?.nota}}</td>
-              <td class="estado">{{proyecto.parametros?.estado}}</td>
+            <tr *ngFor="let evidencia  of evidencia ">
+              <td>{{evidencia.integrantes?.curso_arti_estu?.curso_alumno?.alumno?.persona?.nombre}}</td>
+              <td>{{evidencia.integrantes?.roles?.funcion}}</td>
+              <td class="porcentaje">{{evidencia.porcentaje}}</td>
+              <td>{{evidencia.integrantes?.roles?.horas}}</td>
+              <td>{{evidencia.integrantes?.roles?.nota}}</td>
+              <td class="estado">{{evidencia.integrantes?.roles?.parametros?.estado}}</td>
             </tr>
           </tbody>
       </table>
       </div>
-      <a [routerLink]="['/home/']"><button class="integrantes">Informe</button></a>
+
+      <a><button mat-raised-button color="primary" (click)="openDialog()" class="integrantes">Informe</button></a>
     </div>
   </div>
   <div>
