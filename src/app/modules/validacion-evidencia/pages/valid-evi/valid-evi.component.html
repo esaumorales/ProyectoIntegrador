@@ -28,19 +28,19 @@
         <table class="tabla">
           <tbody>
           <tr *ngFor="let proyecto  of proyecto ">
-              <td>{{proyecto.persona?.nombre}}</td>
+              <td>{{proyecto.integrantes?.curso_arti_estu?.roles?.parametros?.docente?.persona?.nombre}}</td>
               <td>{{proyecto.parametros?.valor}}</td>
               <td>{{proyecto.evidencia?.porcentaje}}</td>
-              <td>{{proyecto.evidencia?.roles?.horas}}</td>
-              <td>{{proyecto.evidencia?.roles?.nota}}</td>
-              <td>{{proyecto.parametros?.estado}}</td>
+              <td>{{proyecto.roles?.horas}}</td>
+              <td>{{proyecto.roles?.nota}}</td>
+              <td class="estado">{{proyecto.parametros?.estado}}</td>
             </tr>
           </tbody>
       </table>
       </div>
       <a ><button mat-raised-button color="primary" [routerLink]="['/home/informe']" class="integrantes">Informe</button></a>
       <div>
-        
+
       </div>
     </div>
     <div class="contenedor_grupo">
@@ -65,7 +65,7 @@
               <td>{{proyecto.evidencia?.porcentaje}}</td>
               <td>{{proyecto.evidencia?.roles?.horas}}</td>
               <td>{{proyecto.evidencia?.roles?.nota}}</td>
-              <td>{{proyecto.parametros?.estado}}</td>
+              <td class="estado">{{proyecto.parametros?.estado}}</td>
             </tr>
           </tbody>
       </table>
@@ -101,7 +101,7 @@
               <td>{{proyecto.evidencia?.porcentaje}}</td>
               <td>{{proyecto.evidencia?.roles?.horas}}</td>
               <td>{{proyecto.evidencia?.roles?.nota}}</td>
-              <td>{{proyecto.parametros?.estado}}</td>
+              <td class="estado">{{proyecto.parametros?.estado}}</td>
             </tr>
           </tbody>
       </table>
@@ -131,7 +131,7 @@
               <td>{{proyecto.evidencia?.porcentaje}}</td>
               <td>{{proyecto.evidencia?.roles?.horas}}</td>
               <td>{{proyecto.evidencia?.roles?.nota}}</td>
-              <td>{{proyecto.parametros?.estado}}</td>
+              <td class="estado">{{proyecto.parametros?.estado}}</td>
             </tr>
           </tbody>
       </table>

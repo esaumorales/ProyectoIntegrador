@@ -47,7 +47,7 @@
 .contenedor_grupos {
   display  : flex;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow : hidden;
 }
 
 .contenedor_grupo {
@@ -135,10 +135,16 @@ table {
 
 }
 
-td  {
+td {
   border-collapse: collapse;
   border-top     : 3px solid #CFCFCF;
   text-align     : center;
-  overflow: hidden;
+  overflow       : hidden;
 }
 
+.estado {
+  background-color: #F7A800;
+  border-radius   : 20rem;
+  width           : 4vw;
+  padding-top     : -2vw;
+}

@@ -1,3 +1,4 @@
+
 import { ValidacioneviService } from '../services/validacionevi.service';
 import { Component } from '@angular/core';
 import { Proyecto } from 'src/app/models/Proyecto';
@@ -9,11 +10,11 @@ import { Evidencia } from 'src/app/models/evidencia';
   styleUrls: ['./validacionEvidencia.component.css']
 })
 export class ValidacionEvidenciaComponent {
+
   proyecto: Proyecto[] = [];
 
   constructor(
-    private validacioneviService: ValidacioneviService
-  ) { }
+    private validacioneviService: ValidacioneviService ) { }
 
   ngOnInit(): void {
     this.validacioneviService.listar().subscribe(data => {

@@ -1,3 +1,4 @@
+import { Roles } from './Roles';
 import { Alumno } from './Alumno';
 import { Evidencia } from 'src/app/models/evidencia';
 import { integrantes } from './integrantes.';
@@ -9,6 +10,8 @@ import { Modalidad } from "./Modalidad";
 import { Parametros } from "./Parametros";
 import { Tip_proyec } from "./Tip_proyect";
 import { Persona } from './Persona';
+import { Docente } from './Docente';
+import { Curso_Arti_Estu } from './Curso_arti_estu';
 
 
 export class Proyecto {
@@ -34,4 +37,8 @@ export class Proyecto {
     evidencia?:Evidencia;
     alumno?: Alumno;
     persona?: Persona;
+    roles?: Roles;
+    docente?: Docente;
+    curso_arti_estu?: Curso_Arti_Estu;
+
 }
